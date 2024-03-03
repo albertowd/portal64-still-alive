@@ -1,4 +1,4 @@
-from ubuntu:23.04
+FROM ubuntu:23.04
 
 WORKDIR /usr/src/app
 
