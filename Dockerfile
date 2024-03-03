@@ -38,6 +38,7 @@ RUN apt-get update -y && \
     libpng-dev \
     libtiff-dev \
     libassimp-dev \
+    g++ \
     git \
     cmake \
     build-essential \
