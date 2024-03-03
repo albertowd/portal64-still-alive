@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  portal-builder:
+    container_name: portal-builder
+    command: sh -c "chmod +x skelatool64/setup_dependencies.sh; chmod +x tools/romfix64.sh; chmod +x tools/setup.sh; make english_audio"
+    environment:
+      PORTAL64_WITH_DEBUGGER: "0"
+      PORTAL64_WITH_GFX_VALIDATOR: "0"
+    hostname: portal-builder
+    image: portal-builder
+    volumes:
+      - ./:/usr/src/app:rw
